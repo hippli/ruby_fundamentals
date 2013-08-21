@@ -8,7 +8,7 @@ class Hash
 
   def keys_of(*args)
     each do |key, value|
-      args.each do |arg| # iterate because args is an array
+      args.each do |arg| # iterate because args is an array of indeterminate size
           puts key if arg == value
       end
     end
